@@ -1,0 +1,23 @@
+# Metric names that don't match any of these regular expressions
+# will be ignored by the adapter
+# --------------------------------------------------------------
+# catch all evaluated metrics
+.+:.+
+# up
+^up
+# node
+^node_.*
+# prometheus metrics
+^prometheus_.*
+# go metrics
+^go_.*
+# http
+^http_.*
+# net
+^net_.*
+# mysql
+^mysql_.*
+# postgres
+^pg_.*
+# kafka timescale adapter
+^kafka_timescale_adapter_.*

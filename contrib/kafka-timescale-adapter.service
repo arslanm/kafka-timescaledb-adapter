@@ -1,0 +1,16 @@
+# -*- mode: conf -*-
+
+[Unit]
+Description=Kafka adapter for Timescale/PostgreSQL
+Documentation=https://github.com/arslanm/kafka-timescale-adapter
+After=network.target
+
+[Service]
+EnvironmentFile=-/etc/prometheus/kafka-timescale-adapter.conf
+User=prometheus
+ExecStart=/usr/bin/kafka-timescale-adapter
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
