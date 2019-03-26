@@ -1,6 +1,6 @@
 OS:=$(shell uname -s | awk '{ print tolower($$1) }')
 ARCH=amd64
-TARGET:=kafka-timescale-adapter
+TARGET:=kafka-timescaledb-adapter
 
 .PHONY: all clean
 

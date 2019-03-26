@@ -7,13 +7,13 @@ If you have not yet prepared your PostgreSQL/Timescale environment please take a
 
 # Configuration
 
-kafka-timescale-adapter consumes metrics from Kafka and sends them to PostgreSQL/Timescale. The adapter can be configured with the following environment variables:
+kafka-timescaledb-adapter consumes metrics from Kafka and sends them to PostgreSQL/Timescale. The adapter can be configured with the following environment variables:
 
 - `LISTEN_ADDR`: Listen address for the adapter, defaults to `:9528`
 - `TELEMETRY_PATH`: Endpoint for the metrics, defaults to `/metrics`
 - `BATCH_SIZE`: Number of metrics consumed from Kafka and sent to PostgreSQL/Timescale at a time, defaults to `10000`
 - `LOG_LEVEL`: Log level, defaults to `info`
-- `WHITELIST_FILE`: The path of the whitelist file listing regular expressions. Only metrics matching the expressions will be sent to PostgreSQL/Timescale. Defaults to `/etc/prometheus/kafka-timescale-adapter.whitelist.regex`
+- `WHITELIST_FILE`: The path of the whitelist file listing regular expressions. Only metrics matching the expressions will be sent to PostgreSQL/Timescale. Defaults to `/etc/prometheus/kafka-timescaledb-adapter.whitelist.regex`
 
 - `KAFKA_BROKER_LIST`: Comma separated Kafka endpoints, defaults to `localhost:9092`
 - `KAFKA_TOPIC`: Kafka topic for the metrics, defaults to `metrics`

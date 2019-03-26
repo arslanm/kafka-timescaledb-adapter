@@ -5,8 +5,8 @@ import (
 
     "github.com/confluentinc/confluent-kafka-go/kafka"
 
-    "github.com/arslanm/kafka-timescale-adapter/log"
-    "github.com/arslanm/kafka-timescale-adapter/util"
+    "github.com/arslanm/kafka-timescaledb-adapter/log"
+    "github.com/arslanm/kafka-timescaledb-adapter/util"
 )
 
 type Config struct {

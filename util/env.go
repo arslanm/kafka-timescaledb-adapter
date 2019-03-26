@@ -5,7 +5,7 @@ import (
     "time"
     "strconv"
 
-    "github.com/arslanm/kafka-timescale-adapter/log"
+    "github.com/arslanm/kafka-timescaledb-adapter/log"
 )
 
 func GetEnvWithDefault(env string, def string) string {

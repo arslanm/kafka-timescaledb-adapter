@@ -3,10 +3,10 @@ package main
 import (
     "time"
 
-    "github.com/arslanm/kafka-timescale-adapter/db"
-    "github.com/arslanm/kafka-timescale-adapter/kafka"
+    "github.com/arslanm/kafka-timescaledb-adapter/db"
+    "github.com/arslanm/kafka-timescaledb-adapter/kafka"
 
-    "github.com/arslanm/kafka-timescale-adapter/util"
+    "github.com/arslanm/kafka-timescaledb-adapter/util"
 )
 
 type Config struct {
@@ -29,7 +29,7 @@ var (
     DEFAULT_WRITE_TIMEOUT  = "30s"
     DEFAULT_WRITE_RETRY    = 3
 
-    DEFAULT_WHITELIST_FILE = "/etc/prometheus/kafka-timescale-adapter.whitelist.regex"
+    DEFAULT_WHITELIST_FILE = "/etc/prometheus/kafka-timescaledb-adapter.whitelist.regex"
 )
     
 func GetConfig() *Config {

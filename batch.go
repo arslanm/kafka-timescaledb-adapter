@@ -8,7 +8,7 @@ import (
     "sync"
     "time"
     "context"
-    "github.com/arslanm/kafka-timescale-adapter/log"
+    "github.com/arslanm/kafka-timescaledb-adapter/log"
 )
 
 // Using WaitGroup to block quit until all workers are done processing

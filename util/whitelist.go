@@ -6,7 +6,7 @@ import (
     "bufio"
     "regexp"
     "strings"
-    "github.com/arslanm/kafka-timescale-adapter/log"
+    "github.com/arslanm/kafka-timescaledb-adapter/log"
 )
 
 type Whitelist struct {

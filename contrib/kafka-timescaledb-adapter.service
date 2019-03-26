@@ -2,13 +2,13 @@
 
 [Unit]
 Description=Kafka adapter for Timescale/PostgreSQL
-Documentation=https://github.com/arslanm/kafka-timescale-adapter
+Documentation=https://github.com/arslanm/kafka-timescaledb-adapter
 After=network.target
 
 [Service]
-EnvironmentFile=-/etc/prometheus/kafka-timescale-adapter.conf
+EnvironmentFile=-/etc/prometheus/kafka-timescaledb-adapter.conf
 User=prometheus
-ExecStart=/usr/bin/kafka-timescale-adapter
+ExecStart=/usr/bin/kafka-timescaledb-adapter
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
 

@@ -17,8 +17,8 @@ import (
 
     "github.com/prometheus/client_golang/prometheus"
 
-    "github.com/arslanm/kafka-timescale-adapter/log"
-    "github.com/arslanm/kafka-timescale-adapter/util"
+    "github.com/arslanm/kafka-timescaledb-adapter/log"
+    "github.com/arslanm/kafka-timescaledb-adapter/util"
 )
 
 // Config for the database
@@ -391,5 +391,5 @@ func (c *Client) Close() {
 }
 
 func (c *Client) Name() string {
-    return "kafka-timescale-adapter"
+    return "kafka-timescaledb-adapter"
 }
